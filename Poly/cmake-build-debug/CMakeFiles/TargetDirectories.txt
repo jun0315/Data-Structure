@@ -1,0 +1,3 @@
+H:/Clion/Data Structure/Poly/cmake-build-debug/CMakeFiles/Poly.dir
+H:/Clion/Data Structure/Poly/cmake-build-debug/CMakeFiles/edit_cache.dir
+H:/Clion/Data Structure/Poly/cmake-build-debug/CMakeFiles/rebuild_cache.dir
