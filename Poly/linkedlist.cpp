@@ -4,7 +4,16 @@
 #include <iostream>
 #include <stdio.h>
 #include "linkedlist.h"
+using namespace std;
 
+bool JudgeElem(ElemType e1,ElemType e2)
+{
+    if(e1.coef==e2.coef && e1.expn==e2.expn)
+    {
+        return true;
+    }
+    return false;
+}
 bool InitiList(LinkList &L)
 {
     L = new LNode;
@@ -15,7 +24,6 @@ bool InitiList(LinkList &L)
 bool GetElem(LinkList L , int i , ElemType &e)
 {
     LinkList p;
-    p = new LNode;
     p = L->next;
     int j = 1 ;
     while (p && j<i )
@@ -25,7 +33,7 @@ bool GetElem(LinkList L , int i , ElemType &e)
     }
     if(!p||j>i)
     {
-        printf("èŽ·å–æ•°æ®å¤±è´¥");
+        printf("»ñÈ¡Êý¾ÝÊ§°Ü");
         return false;
     }
     e = p->e;
@@ -37,14 +45,14 @@ LNode *LocateElem(LinkList L, ElemType &e)
 {
     LinkList p = new LNode;
     p = L->next;
-    while (p && p->e!=e)
+    while (p && JudgeElem(p->e,e));
         p = p->next;
     return p;
 }
 
 bool ListInsert(LinkList &L , int i , ElemType e)
 {
-    LinkList p = new LNode;
+    LinkList p = L;
     int j = 0;
     while (p && j < i-1)
     {
@@ -62,9 +70,9 @@ bool ListInsert(LinkList &L , int i , ElemType e)
     return true;
 }
 
-bool  ListDelete(LinkList &L , int i)
+bool  ListDelete(LinkList L , int i)
 {
-    LinkList p = new LNode;
+    LinkList p ;
     p = L;
     int j = 0;
     while (p && j< i-1)
@@ -74,9 +82,10 @@ bool  ListDelete(LinkList &L , int i)
     }
     if(!(p->next) || j > i-1)
         return false;
+    LinkList q;
+    q = p->next;
     p->next = p->next->next;
-    p = p->next;
-    delete p;
+    delete q;
     return true;
 
 }
@@ -85,9 +94,14 @@ void CreateList_H(LinkList &L , int n)
 {
     L = new LNode;
     L->next = NULL;
-    for(int i = 0 ; i < n ; i++)
+    for(int i = n ; i >= 1 ; i--)
     {
         LinkList p = new LNode;
-        cin >>
+        ElemType e ;
+        e.expn = i;
+        e.coef = i;
+        p->e = e;
+        p->next = L->next;
+        L->next = p;
     }
 }

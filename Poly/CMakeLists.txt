@@ -3,4 +3,4 @@ project(Poly)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Poly main.cpp linkedlist.h linkedlist.cpp)
+add_executable(Poly main.cpp linkedlist.h linkedlist.cpp test.cpp)

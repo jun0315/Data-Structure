@@ -1,18 +1,10 @@
 #include <iostream>
 #include <stdio.h>
+#include "linkedlist.h"
 using namespace std;
 
-typedef struct ElemType
-{
-    float coef;
-    int expn;
-}ElemType;
-
-typedef struct PNode
-{
-    ElemType e;
-    struct PNode *next;
-}PNode,*Polynomial;
+typedef LNode PNode;
+typedef LinkList Polynomial;
 
 int GetNum(Polynomial P)
 {
@@ -28,23 +20,6 @@ int GetNum(Polynomial P)
     return n;
 }
 
-bool GetElem(Polynomial P , int i ,ElemType &e)//获取元素e
-{
-    Polynomial p;
-    p = new PNode;
-    p = P->next;
-    int j = 1;
-    while(p&&j<i)
-    {
-        p = p->next;
-        j++;
-    }
-    if(!p||j>i)
-        return false;
-    e = p->e;
-    return true;
-
-}
 
 void printPolyn(Polynomial P)
 {
@@ -149,15 +124,18 @@ void AddPolyn(Polynomial &Pa,Polynomial &Pb)
     delete Pb;
 }
 
+void test();
 int main()
 {
-    Polynomial P1,P2;
-    CreatePolyn(P1);
-    printPolyn(P1);
-    CreatePolyn(P2);
-    printPolyn(P2);
-    AddPolyn(P1,P2);
-    printf("最后两式子相加之和为：");
-    printPolyn(P1);
+//    Polynomial P1,P2;
+//    CreatePolyn(P1);
+//    printPolyn(P1);
+//    CreatePolyn(P2);
+//    printPolyn(P2);
+//    AddPolyn(P1,P2);
+//    printf("最后两式子相加之和为：");
+//    printPolyn(P1);
+//多项式的相加暂时注释了，只保留下方的test函数，用来测试链式表的操作
+    test();
 
 }

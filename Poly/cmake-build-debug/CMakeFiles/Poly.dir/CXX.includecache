@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
-H:/Clion/Data Structure/Poly/main.cpp
+H:/Clion/Data Structure/Poly/linkedlist.h
+
+H:/Clion/Data Structure/Poly/test.cpp
 iostream
 -
 stdio.h
 -
+linkedlist.h
+H:/Clion/Data Structure/Poly/linkedlist.h
 

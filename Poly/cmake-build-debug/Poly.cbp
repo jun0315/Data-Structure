@@ -89,6 +89,9 @@
 		<Unit filename="H:/Clion/Data Structure/Poly/main.cpp">
 			<Option target="Poly"/>
 		</Unit>
+		<Unit filename="H:/Clion/Data Structure/Poly/test.cpp">
+			<Option target="Poly"/>
+		</Unit>
 		<Unit filename="H:/Clion/Data Structure/Poly/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
