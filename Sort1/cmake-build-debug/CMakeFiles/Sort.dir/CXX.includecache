@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+H:/Clion/Data Structure/Sort1/Sort.cpp
+iostream
+H:/Clion/Data Structure/Sort1/iostream
+Sort.h
+H:/Clion/Data Structure/Sort1/Sort.h
+
+H:/Clion/Data Structure/Sort1/Sort.h
+

@@ -1,0 +1,3 @@
+H:/Clion/Data Structure/BsTree/cmake-build-debug/CMakeFiles/Solution.cpp.dir
+H:/Clion/Data Structure/BsTree/cmake-build-debug/CMakeFiles/edit_cache.dir
+H:/Clion/Data Structure/BsTree/cmake-build-debug/CMakeFiles/rebuild_cache.dir

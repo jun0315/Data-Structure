@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+H:/Clion/Data Structure/BsTree/BSTree.cpp
+BsTree.h
+H:/Clion/Data Structure/BsTree/BsTree.h
+iostream
+-
+vector
+H:/Clion/Data Structure/BsTree/vector
+
+H:/Clion/Data Structure/BsTree/BSTree.h
+
+H:/Clion/Data Structure/BsTree/BsTree.h
+
+H:/Clion/Data Structure/BsTree/Solution.h
+BSTree.h
+H:/Clion/Data Structure/BsTree/BSTree.h
+vector
+H:/Clion/Data Structure/BsTree/vector
+iostream
+H:/Clion/Data Structure/BsTree/iostream
+
+H:/Clion/Data Structure/BsTree/main.cpp
+iostream
+-
+Solution.h
+H:/Clion/Data Structure/BsTree/Solution.h
+
